@@ -1,6 +1,6 @@
 Feature: Shooping Cart Functionality
 
-  Scenario Outline: Check Succeffully added to Cart
+  Scenario Outline: Check Successfully added to Cart
   Given User is in Amazon Page
   And User search the <item> to search box
   When the <item> displayed
@@ -26,7 +26,7 @@ Feature: Shooping Cart Functionality
       | laptop |     3 | Samsung |
       | laptop |     2 | HP      |
 
-  Scenario Outline: Check Succeffully added to Cart via Category
+  Scenario Outline: Check Successfully added to Cart via Category
   Given User is in Amazon Page
   And navigate to Shop by category menu
   And user choose/select the <item>
