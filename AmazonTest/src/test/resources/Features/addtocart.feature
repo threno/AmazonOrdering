@@ -1,5 +1,4 @@
 Feature: Shooping Cart Functionality
-
   Scenario Outline: Check Successfully added to Cart
   Given User is in Amazon Page
   And User search the <item> to search box
@@ -13,6 +12,7 @@ Feature: Shooping Cart Functionality
   | item                                       |
   | Echo Dot (3rd Gen) Charcoal with Echo Auto |
   | Dell XPS 9300                              |
+  
   Scenario Outline: Searching Any Product filter by number of stars and brand.
     Given User is in Amazon Page
     And User search the <item> to search box
