@@ -1,7 +1,7 @@
 @tag1
 Feature: Shooping Cart Functionality
 
-	@tag1
+  @tag1
   Scenario Outline: Check Successfully added to Cart
     Given User is in Amazon Page
     And User search the <item> to search box
