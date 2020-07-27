@@ -29,8 +29,8 @@ public class AddToCartSteps extends AmazonDriver{
 	@Given("User is in Amazon Page")
 	public void user_is_in_Amazon_Main_Page()  {
 		setup();
-		driver.getTitle();
-		System.out.println(driver.getTitle());
+//		driver.getTitle();
+	//	System.out.println(driver.getTitle());
 //		Assert.assertTrue
 	}
 	

@@ -5,7 +5,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src/test/resources/Features/addtocart.feature",glue={"Steps"},plugin= {"pretty","html:target/reports"}, monochrome=true)
+@CucumberOptions(features="src/test/resources/Features/addtocart.feature",glue={"Steps"},plugin= {"pretty","html:target/reports"},monochrome=true,tags={"@tag1"})
 
 public class Runner {
 
