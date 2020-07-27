@@ -33,19 +33,24 @@ public class AmazonMainPage extends AmazonDriver{
 	@CacheLookup
 	WebElement cat_alexa; 
 	
-	@FindBy(className="a-icon a-icon-star-medium a-star-medium-1")
+	
+	//*[@id="p_72/2661621011"]/span/a/section
+	
+	
+	
+	@FindBy(id="p_72/2661621011")
 	@CacheLookup
 	WebElement onestarUp;
 
-	@FindBy(className="a-icon a-icon-star-medium a-star-medium-2")
+	@FindBy(id="p_72/2661620011")
 	@CacheLookup
 	WebElement twostarUp;
 	
-	@FindBy(className="a-icon a-icon-star-medium a-star-medium-3")
+	@FindBy(id="p_72/2661619011")
 	@CacheLookup
 	WebElement threesstarUp;
 	
-	@FindBy(className="a-icon a-icon-star-medium a-star-medium-4")
+	@FindBy(id="p_72/2661618011")
 	@CacheLookup
 	WebElement fourstarUp;
 	
@@ -106,17 +111,17 @@ public class AmazonMainPage extends AmazonDriver{
 		driver.quit();
 	}
 	
-	public void select_by_number_star(Integer star) {
+	public void select_by_number_star(String star) {
 		switch(star) {
-		  case 1:
+		  case "1":
 			  onestarUp.click();
 		    break;
-		  case 2:
+		  case "2":
 			  twostarUp.click();
 		    break;
-		  case 3:
+		  case "3":
 			  threesstarUp.click();
-		  case 4:
+		  case "4":
 			  fourstarUp.click();
 		}
 	}

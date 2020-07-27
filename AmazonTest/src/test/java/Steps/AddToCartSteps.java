@@ -90,7 +90,7 @@ public class AddToCartSteps extends AmazonDriver{
 	}
 	
 	@And("^filter by number of (.*)")
-	public void filter_by_number_of_stars(Integer star) throws Throwable{
+	public void filter_by_number_of_stars(String star) throws Throwable{
 		AmazonMainPage am = new AmazonMainPage(driver);
 		am.select_by_number_star(star);
 		Thread.sleep(3000);
